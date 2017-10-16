@@ -1,8 +1,0 @@
-﻿  Trolls.cpp
-  Orcs.cpp
-  main.cpp
-e:\githubprojects\orcsvstrolls\orcstrolls\orcstrolls\main.cpp(37): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Characters.cpp
-  Generating Code...
-  OrcsTrolls.vcxproj -> E:\githubProjects\OrcsVsTrolls\OrcsTrolls\Debug\OrcsTrolls.exe
-  OrcsTrolls.vcxproj -> E:\githubProjects\OrcsVsTrolls\OrcsTrolls\Debug\OrcsTrolls.pdb (Partial PDB)
