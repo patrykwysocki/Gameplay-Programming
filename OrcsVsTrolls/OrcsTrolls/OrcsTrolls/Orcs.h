@@ -1,13 +1,13 @@
 #pragma once
 #include <iostream>
 #include "Characters.h" 
-
+//orc class derived from character
 class Orcs :public Characters
 {
 public:
 	Orcs();
 	
-
+	//they inherit method from base class and implements into it
 	virtual void shout() 
 	{ 
 		std::cout << "IM AN ORC! He says" << std::endl;	
@@ -34,6 +34,7 @@ public:
 	//void setMana(float newMana);
 	//void setEnergy(float newEnergy);
 
+	//health,mana energy and bool ready to battle of orc
 	float health;
 	float mana;
 	float energy;

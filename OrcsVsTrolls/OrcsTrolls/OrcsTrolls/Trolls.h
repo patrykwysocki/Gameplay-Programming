@@ -1,11 +1,12 @@
 #pragma once
 #include <iostream>
 #include "Characters.h" 
+// troll class derived from character
 class Trolls : public Characters
 {
 public:
 	Trolls();
-	
+	//they inherit method from base class and implements into it
 	virtual void shout() 
 	{ 
 		std::cout << "IM A TROLL! He says" << std::endl; 
@@ -31,6 +32,7 @@ public:
 	//void setMana(float newMana);
 	//void setEnergy(float newEnergy);
 
+	//health,mana energy and bool ready to battle of troll
 	float health;
 	float mana;
 	float energy;

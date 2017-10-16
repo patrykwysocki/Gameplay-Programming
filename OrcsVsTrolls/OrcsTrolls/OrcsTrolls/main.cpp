@@ -12,6 +12,7 @@
 #include <stdio.h>     
 #include <stdlib.h>    
 #include <time.h>  
+
 void chooseChar();
 void fightAsOrc();
 void fightAsTroll();
@@ -22,9 +23,12 @@ struct PlayerName
 {
 	std::string name;
 };
+
 PlayerName playerName;
 Orcs Orc;
 Trolls Troll;
+
+//polymorphic method call
 Characters *player;
 
 void chooseChar()
@@ -35,7 +39,7 @@ void chooseChar()
 
 	int choice;
 
-
+	//introduction
 	std::cout << "Welcome to my Orcs vs Trolls game \nPick your destiny.\nType 1 to be an orc or 2 to be a troll" << std::endl;
 	std::cin >> choice;
 	while (choice < 1 || choice >2)
@@ -43,7 +47,7 @@ void chooseChar()
 		std::cout << "ONLY Orcs and Trolls to pick. Pick again !" << std::endl;
 		std::cin >> choice;
 	}
-
+	//1=orc 2=troll
 	if (choice == 1)
 	{
 		std::cout << "Name your Orc " << std::endl;
@@ -208,6 +212,7 @@ void fightAsTroll()
 			Orc.health += 50;
 			std::cout << Troll.health << " Health points left of yours \nEnemies health left " << Orc.health << std::endl;
 		}
+		//you win
 		if (Orc.health <= 0 || Orc.health==0)
 		{
 			system("cls");
@@ -217,6 +222,7 @@ void fightAsTroll()
 			system("pause");
 
 		}
+		//you lose
 		if (Troll.health <= 0 || Troll.health == 0)
 		{
 			system("cls");
@@ -358,7 +364,7 @@ void fightAsOrc()
 				Troll.health += 50;
 				std::cout << Orc.health << " Health points left of yours \nEnemies health left " << Troll.health << std::endl;
 			}
-
+			//you win
 			if (Troll.health <= 0 || Troll.health == 0)
 			{
 				system("cls");
@@ -368,6 +374,7 @@ void fightAsOrc()
 				system("pause");
 
 			}
+			//you lose
 			if (Orc.health <= 0 || Orc.health== 0)
 			{
 				system("cls");
@@ -385,7 +392,7 @@ void fightAsOrc()
 }
 		
 
-
+//s
 
 void main()
 {
